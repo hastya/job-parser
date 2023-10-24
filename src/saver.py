@@ -20,7 +20,6 @@ class JSONSaver:
     def json_file(self):
         """
         Функция для записи списка в json-файл
-        :return:
         """
         with open('vacancies.json', 'w', encoding='utf-8') as file:
             json.dump(self.json_vacancy_dict, file, ensure_ascii=False)
